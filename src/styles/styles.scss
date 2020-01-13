@@ -1,0 +1,233 @@
+@import 'base/settings';
+@import 'base/base';
+
+button{
+    background-color: inherit;
+    color: inherit;
+    break-inside: auto;
+    width: inherit;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+button:hover{
+    font-weight: bold;
+}
+.superHeader{
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: sienna;
+    color: white
+}
+.is-active{
+    font-weight: bold;
+}
+.NLink{
+    color: white;
+    align-self: center;
+    padding: 0.5rem;
+}
+.linkContainer{
+    width: 100%;
+    display: flex;
+    padding-right: 1rem;
+    flex-direction: row-reverse;
+}
+.PanelLeft{
+    background-color: darken($color: Sienna, $amount: 10%);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1rem;
+}
+.Page{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.mini-container{
+    border: 1px solid lighten($color: Sienna, $amount: 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mini-container button:active{
+    background-color: invert($color: Sienna);
+    color: black;
+}
+.KeyForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.KeyBox{
+    margin: 2rem;
+    height: 20rem;
+}
+.selection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.buttonContainer{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.smallField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fingerprint{
+    margin: 2rem;
+}
+.submitPkey{
+    margin: 2rem;
+    background-color: Sienna;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 4rem;
+}
+.submitPkey:active{
+    background-color: invert($color: Sienna);
+    color: black;
+}
+input[type="file"]{
+    display: none;
+    width: 0;
+}
+.file-input{
+    margin: 2rem;
+    background-color: Sienna;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    min-width: 10rem;
+    padding-left: 3rem;
+}
+.file-input:active{
+    background-color: invert($color: Sienna);
+    color:black
+}
+.IDBar{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: darken($color: Sienna, $amount: 10%);
+    color: white;
+    align-content: center;
+    align-items: center;
+    height: 4rem;
+}
+.smallbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: invert(lighten($color: Sienna, $amount: 30%));
+    color: white;
+    padding: 1rem;
+    height: 3rem;
+}
+.newMessage{
+    display: flex;
+    flex-direction: column;
+    background-color: chocolate;
+    color: white;
+    align-items: flex-start;
+    padding: 2rem;
+    width: inherit;
+}
+.MessageForm{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+.MessageForm textarea{
+    height: 20rem;
+    width: 80%
+}
+.input-wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.input-wrapper-column{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.input-wrapper input{
+    width: 80%;
+    padding-left: 1rem;
+}
+.MessageBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    width: 80%;
+    margin-bottom: 2rem;
+    background-color:invert(lighten($color: sienna, $amount: 30%));
+    color: white
+}
+.MessageBox textarea{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    width: inherit;
+    min-height: 20rem;
+}
+.MessageBox label{
+    margin: 1rem;
+}
+.MessagePanel{
+    background-color: sienna;
+    padding: 2rem;
+}
+.major-ordered-list{
+    list-style-type: upper-roman;
+    font-weight: bold;
+}
+.minor-ordered-list{
+    list-style-type: lower-roman;
+    font-weight: normal;
+}
+@media(max-width:1000px){
+    .KeyForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-wrapper input{
+        padding-left: unset;
+    }
+    .MessagePanel{
+        padding: unset;
+        padding-bottom: 1rem;
+    }
+    .MessageBox{
+        margin-bottom: 1rem;
+    }
+    .smallField{
+        flex-direction: column;
+    }
+    .linkContainer{
+        width:80%;
+    }
+    .selection{
+        width:80%;
+    }
+    .submitPkey{
+        margin-bottom: 1rem;
+    }
+}
